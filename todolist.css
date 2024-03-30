@@ -1,0 +1,97 @@
+body {
+  font-family: Times New Roman, Times, serif;
+  background-color: lightslategrey;
+  background-size: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.container {
+  padding: 10px 45px 20px 45px;
+
+  border-radius: 10px;
+  border: 3px solid rgb(11, 11, 11);
+
+  display: flexbox;
+  justify-content: center;
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}
+
+.number {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.main,
+.tasks {
+  display: grid;
+  grid-template-columns: 180px 150px 100px;
+  column-gap: 25px;
+  row-gap: 15px;
+  font-size: 22px;
+  color: white;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 28px;
+  padding: 4px 20px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(23, 23, 23, 0.892);
+  background-color: transparent;
+  text-decoration: underline;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: inline-flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px rgb(82, 79, 79);
+}
+
+.addbtn,
+.delbtn {
+  background-color: #060606;
+  color: white;
+  border: none;
+  padding: 10px 4px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid #060606;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.delbtn {
+  background: hsl(345deg 100% 47%);
+  border: 2px solid hsl(345deg 100% 47%);
+  font-size: 16px;
+}
+
+.addbtn:hover {
+  background-color: white;
+  color: #060606;
+}
+.delbtn:hover {
+  background-color: white;
+  color: hsl(345deg 100% 47%);
+}
+
+.task1,
+.task2 {
+  border-radius: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+  background-color: lightyellow;
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px rgb(82, 79, 79);
+}
+
+.task1::placeholder {
+  color: #060606;
+}
